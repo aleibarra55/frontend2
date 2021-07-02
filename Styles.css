@@ -1,35 +1,142 @@
 @import url("https://fonts.googleapis.com/css?family=Alegreya:900|Open+Sans|Slabo+27px&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
 body{
     background-color: #fffbf7 ;
     font-family: "Open sans", sans-serif;    
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;   
+}
+main{
+    margin-top: 285px;
+    text-align: center;
 }
     
-    h1 {
-        color:rgba(116, 40, 187, 0.671);
-        font-size:50px;
-        padding: 80px;
-      
-    }
-    h2{
-        color:#46484c;
-    }
-    p{
-        color: #8b8b8bcc;
-    }
-    button{
-        color: #fff;
-        background-color: #025157;
-    }
+main h1 {
+    color: #025157;
+    font-family: "Alegreya", serif;
+    font-size: 60px;
+    margin-bottom: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+}
 
-    .fixed-header{
+.main h4{
+    color: #46484c;
+    font-family: "Slabo 27px", serif;
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+p{
+    color: #8b8b8bcc;
+    margin-top: 15px;
+}
+
+form{
+    height: 55px;
+}
+
+input, button{
+    height: 100%;
+    border-radius: 8px;
+}
+
+input{
+    border: 1px solid #b6b6b6;
+    padding: 6px 20px;
+    width: 60%;
+    max-width: 250px;
+}
+
+button{
+    color: #fff;
+    background-color: #025157;
+    border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 6px 20px;
+    margin-left: -10px;
+}
+
+.banner{
+    margin-top: 32px;
+    margin: 0 0 1rem;
+}
+.banner img{
+    vertical-align: middle;
+    border-style: none;
+}
+
+.intro{
+    margin-top: 32px;
+}
+
+.intro img{
+    width: 70%;
+    vertical-align: middle;
+    border-style: none;
+}
+
+ .navbar {
+    background-color: #fffbf7;
+}
+
+.navbar-light .nav-item .nav-link{
+    color: #025157;
+}
+.navbar-light .navbar-toggler{
+    border-color: #025157;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(3, 81, 77)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  
+  .form-inline {
+    text-align: right;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .form-inline > * {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .form-inline a {
+    color: #67b54b;
+  }
+  
+  .form-inline button {
+    color: white;
+    background-color: #67b54b;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 0;
+    border-radius: 5px;
+  }
+.fixed-top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+    /* .fixed-header{
         position: fixed;
         background-color: white;
         top: 0;
         left: 0;
         right: 0;
     }
-    
-    
     .header{
         margin: 40px 20px 0px 20px;
         font-size: 0;
@@ -37,11 +144,9 @@ body{
         height: 45px;
         font-family: sans-serif;
     }
-    
     li{ 
         display:inline;
     }
-    
     .header > * {
         display: inline-block;
         font-size: 16px;
@@ -54,10 +159,11 @@ body{
         width: 15%;
     }
     
-    .navbar{
+    .navbar navbar-expand-lg navbar-light bg-light fixed-top{
         width: 100%;
         text-align: center;
         color: #025157;
+        background-color: #fffbf7;
     }
     
     .navbar li{
@@ -87,13 +193,18 @@ body{
         padding-bottom: 12px;
         border: 0;
         border-radius: 5px;
-    }
+    } */
+
+
     .promo {
         display: flex;
         width: 70%;
         margin: 100px auto;
         align-items: center;
-    
+    }
+
+    .promo > *{
+        justify-content: space-around;
     }
     
     .publish h3{
@@ -112,18 +223,21 @@ body{
     
     .publish > form {
         display: flex;
+        flex-direction: column;
+        height: 55px;
     }
     
     .publish > form p {
-        color:#025157;
+        color:#343434;
         margin-right: 18px;
     }
-    
-    .publish >form {
-        display: flex;
+
+    .publish > form div{
+        height: 100%;
     }
     
     .video{
+        flex: 1;
         display: flex;
         flex-direction: column;
         align-items: center;
