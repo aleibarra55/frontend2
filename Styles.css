@@ -207,6 +207,9 @@ button{
         justify-content: space-around;
     }
     
+    .publish{
+        padding-left: 15px;
+    }
     .publish h3{
         font-family: "Alegreya", serif;
         font-size: 40px;
@@ -241,6 +244,7 @@ button{
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-right: 15px;
     }
     .video img {
         width: 120px;
@@ -288,7 +292,7 @@ button{
         margin-left: 0;
         height: 45px;
         cursor: pointer;
-        /* align-items: center; */
+        align-items: center;
         background-color: #025157;
         color: white;
     }
@@ -545,7 +549,6 @@ button{
         margin-top: 70px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin-top: 70px;
         padding: 0;
       }
 
@@ -580,7 +583,9 @@ button{
     }
 
     .card-content-body{
-        padding: 25px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
     }
 
     .card-content-body h3{
@@ -597,9 +602,10 @@ button{
         line-height: 1.5;
         color: #46484c;
         font-weight: 400;
-        height: 85px;
+        /* height: 85px; */
         margin-bottom: 16px;
         margin-top: 15px;
+        
     }
 
     .card-content-body a{
@@ -608,6 +614,9 @@ button{
         color: #67b54b;
         font-weight: 600;
         text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-content: flex-end;
     }
 
     .sign-in{
